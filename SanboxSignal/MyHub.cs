@@ -21,7 +21,6 @@ public class MyHub : Hub
 
     public override Task OnDisconnectedAsync(Exception? exception)
     {
-
         _logger.LogInformation("Disconnected {@id}", Context.ConnectionId);
 
         return base.OnDisconnectedAsync(exception);
